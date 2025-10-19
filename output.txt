@@ -1,0 +1,40 @@
+=== Data size: 1000000 ===
+1) Sequential replace_if: 5.8584 ms
+2a) Policy seq:       6.61 ms
+2b) Policy par:       3.0607 ms
+2c) Policy par_unseq: 1.6004 ms
+
+--- Custom parallel replace_if ---
+Hardware threads: 8
+| K (threads) | time (ms) |
+|------------|-----------|
+|          1 |    8.2171 |
+|          2 |     3.139 |
+|          4 |    1.9944 |
+|          8 |    2.2131 |
+|         16 |     2.434 |
+Best speed: K = 4 (1.9944 ms)
+K/hardware_threads ratio: 4/8 = 0.5
+* Time usually grows if K >> hardware threads due to thread overhead.
+
+=== Data size: 5000000 ===
+1) Sequential replace_if: 28.6732 ms
+2a) Policy seq:       30.748 ms
+2b) Policy par:       6.6582 ms
+2c) Policy par_unseq: 5.5384 ms
+
+--- Custom parallel replace_if ---
+Hardware threads: 8
+| K (threads) | time (ms) |
+|------------|-----------|
+|          1 |   29.1199 |
+|          2 |    18.552 |
+|          4 |    8.8258 |
+|          8 |    5.9275 |
+|         16 |    8.2676 |
+Best speed: K = 8 (5.9275 ms)
+K/hardware_threads ratio: 8/8 = 1
+* Time usually grows if K >> hardware threads due to thread overhead.
+
+C:\Users\User\source\repos\ЛЕРА\x64\Release\ЛЕРА.exe (процесс 16720) завершил работу с кодом 0 (0x0).
+Нажмите любую клавишу, чтобы закрыть это окно:
