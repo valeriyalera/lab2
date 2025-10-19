@@ -35,6 +35,3 @@ Hardware threads: 8
 Best speed: K = 8 (5.9275 ms)
 K/hardware_threads ratio: 8/8 = 1
 * Time usually grows if K >> hardware threads due to thread overhead.
-
-C:\Users\User\source\repos\ЛЕРА\x64\Release\ЛЕРА.exe (процесс 16720) завершил работу с кодом 0 (0x0).
-Нажмите любую клавишу, чтобы закрыть это окно:
